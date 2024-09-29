@@ -1,47 +1,57 @@
-/* Basic reset to remove default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
 header {
     background: #435585;
     padding: 20px;
+    margin: -8px;
+    text-align: center;
+}
+
+header h1 {
+    display: inline;
+    color: #F5E8C7;
+    outline: 10px black;
+    margin-right: 30%;
+}
+
+nav {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: inline;
+    padding: 10px;
     list-style-type: none;
 }
 
 nav li {
-    margin-right: 20px;
+    display: inline;
+    margin: 0px 1vw;
 }
 
-nav li a {
+nav li.logo img {
+    vertical-align: middle;
+    height: 40px; 
+    padding-bottom: 5px; 
+}
+
+nav li:last-child {
+    margin-top: 10px;
+}
+
+nav a {
     text-decoration: none;
     color: #F5E8C7;
-    padding: 10px 20px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 130px;
+    padding: 10px;
 }
 
 .buttons:hover {
     background-color: #363062;
     border: 2px solid #F5E8C7;
+    border-radius: 15px;
 }
-
-nav .logo {
-    margin-right: auto;
-}
-
 
 nav .search input {
     padding: 8px 10px;
